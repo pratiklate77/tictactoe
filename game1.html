@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* This keeps the board small and centered */
+
+
+        .wrapper {
+            width: fit-content;
+            margin: 20px auto;
+
+        }
+
+        /* Tic Tac Toe layout */
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            gap: 5px;
+            background: black;
+            padding: 5px;
+        }
+
+        /* Each square */
+        .cell {
+            width: 120px;
+            height: 120px;
+            background: white;
+        }
+
+        .cell_btn {
+
+            height: 120px;
+            width: 120px;
+            border-radius: 0;
+            background-color: aqua;
+            font-size: 30px;
+        }
+        #winMessage {
+            font-size: 50px;
+            color: red;
+            text-align: center;
+        }
+        #replay_btn{
+            
+            height: 400px;
+            width: 400px;
+    
+        }
+        #replay{
+            height: 500px;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        /* .btn_1{ }
+.btn_2{ }
+.btn_3{ }
+.btn_4{ }
+.btn_5{ }
+.btn_6{ }
+.btn_7{ }
+.btn_8{ }
+.btn_9{ } */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Play Game !</h1>
+
+    <div class="wrapper">
+        <div class="board">
+            <div class="cell"> <button class="cell_btn btn_1" data-row="0" data-col="0"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="0" data-col="1"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="0" data-col="2"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="1" data-col="0"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="1" data-col="1"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="1" data-col="2"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="2" data-col="0"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="2" data-col="1"> </button> </div>
+            <div class="cell"> <button class="cell_btn btn_1" data-row="2" data-col="2"> </button> </div>
+        </div>
+    </div>
+
+    <p id='count'> this is value of count</p>
+    <p id='win'> win</p>
+    <div id="winMessage"></div>
+    
+
+
+
+
+    <script type="module" src="winlogic.js">
+       
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
